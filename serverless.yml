@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: my-Next-app-rss
+service: myfirstapprss
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -30,7 +30,7 @@ plugins:
 
 custom:
   client:
-    bucketName: my-Next-app-rss
+    bucketName: mysecondapprss
     distributionFolder: build
   ## Serverless-single-page-app-plugin configuration:
   s3LocalPath: ${self:custom.client.distributionFolder}/
@@ -112,6 +112,17 @@ custom:
 #    environment:
 #      variable2: value2
 
+# you can add CloudFormation resource templates here
+#resources:
+#  Resources:
+#    NewResource:
+#      Type: AWS::S3::Bucket
+#      Properties:
+#        BucketName: my-new-bucket
+#  Outputs:
+#     NewOutput:
+#       Description: "Description for the output"
+#       Value: "Some output value"
 # you can add CloudFormation resource templates here
 resources:
   Resources:
